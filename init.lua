@@ -1,0 +1,6 @@
+local mytimer = tmr.create()
+mytimer:register(3000, tmr.ALARM_SINGLE, function(t)
+    print('startup')
+    dofile('main.lua')
+end)
+mytimer:start()
